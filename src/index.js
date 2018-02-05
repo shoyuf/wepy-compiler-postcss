@@ -7,12 +7,18 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (content, config, file) {
   return new Promise(function (resolve, reject) {
     (0, _postcss2.default)([(0, _postcssCssnext2.default)({
-      cssnextConf: cssnextConf
+      features: {
+        customProperties: {
+          variables: {
+            mainColor: '#ff6d66'
+          }
+        }
+      }
     })]).process(content, {
       from: undefined
     }).then(function (res) {
       resolve(res.css);
-    }).catct(reject);
+    }).catch(reject);
   });
 };
 
@@ -27,13 +33,3 @@ var _postcssCssnext2 = _interopRequireDefault(_postcssCssnext);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import path from 'path'
-
-var cssnextConf = {
-  features: {
-    customProperties: {
-      variables: {
-        mainColor: '#ff6d66'
-      }
-    }
-  }
-};

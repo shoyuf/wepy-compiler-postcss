@@ -539,3 +539,7 @@ units-css@^0.4.0:
 viewport-dimensions@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/viewport-dimensions/-/viewport-dimensions-0.2.0.tgz#de740747db5387fd1725f5175e91bac76afdf36c"
+
+"wepy-compiler-postcss@https://github.com/shoyuf/wepy-compiler-postcss.git":
+  version "1.0.0"
+  resolved "https://github.com/shoyuf/wepy-compiler-postcss.git#db9f3019674ef80e58f1c6ac48aab4a8e326e8d3"
