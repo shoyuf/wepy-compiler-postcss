@@ -1,12 +1,10 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+const postcss = require('postcss')
+const cssnext = require('postcss-cssnext')
+const pxtorpx = require('postcss-pxtorpx')
 
 exports.default = function (content, config, file) {
-  return new Promise(function (resolve, reject) {
-    (0, _postcss2.default)([(0, _postcssCssnext2.default)({
+  return new Promise((resolve, reject) => {
+    postcss([cssnext({
       features: {
         customProperties: {
           variables: {
@@ -14,22 +12,12 @@ exports.default = function (content, config, file) {
           }
         }
       }
+    }), pxtorpx({
+      multiplier: 2
     })]).process(content, {
-      from: undefined
-    }).then(function (res) {
-      resolve(res.css);
-    }).catch(reject);
-  });
-};
-
-var _postcss = require('postcss');
-
-var _postcss2 = _interopRequireDefault(_postcss);
-
-var _postcssCssnext = require('postcss-cssnext');
-
-var _postcssCssnext2 = _interopRequireDefault(_postcssCssnext);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// import path from 'path'
+      form: undefined
+    }).then(res => {
+      resolve(res.css)
+    }).catch(reject)
+  })
+}

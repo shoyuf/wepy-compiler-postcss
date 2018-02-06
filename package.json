@@ -12,5 +12,8 @@
   "devDependencies": {
     "postcss": "^6.0.17",
     "postcss-cssnext": "^3.1.0"
+  },
+  "dependencies": {
+    "postcss-pxtorpx": "^1.0.0"
   }
 }
