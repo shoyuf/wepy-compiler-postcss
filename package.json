@@ -6,14 +6,10 @@
   "author": "shoyuf <shoyuf@shoyuf.top>",
   "license": "MIT",
   "repository": {
-    "url": "git@github.com:shoyuf/wepy-compiler-postcss.git",
+    "url": "git+https://github.com/shoyuf/wepy-compiler-postcss.git",
     "type": "git"
   },
   "devDependencies": {
-    "postcss": "^6.0.17",
-    "postcss-cssnext": "^3.1.0"
-  },
-  "dependencies": {
-    "postcss-pxtorpx": "^1.0.0"
+    "postcss": "^6.0.17"
   }
 }
