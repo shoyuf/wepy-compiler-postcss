@@ -9,6 +9,9 @@
     "url": "git+https://github.com/shoyuf/wepy-compiler-postcss.git",
     "type": "git"
   },
+  "bugs": {
+    "url": "https://github.com/shoyuf/wepy-compiler-postcss/issues"
+  },
   "devDependencies": {
     "postcss": "^6.0.17"
   }

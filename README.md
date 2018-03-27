@@ -27,7 +27,7 @@ module.exports = {
 
 ## 参数说明
 
-[postcssPostCSS及其常用插件介绍](http://www.css88.com/archives/7317)
+[PostCSS及其常用插件介绍](http://www.css88.com/archives/7317)
 
 
 ## 已知Bug
