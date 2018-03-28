@@ -1,6 +1,6 @@
 {
   "name": "wepy-compiler-postcss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a wepy compiler",
   "main": "src/index.js",
   "author": "shoyuf <shoyuf@shoyuf.top>",
