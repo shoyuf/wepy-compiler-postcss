@@ -13,6 +13,6 @@
     "url": "https://github.com/shoyuf/wepy-compiler-postcss/issues"
   },
   "devDependencies": {
-    "postcss": "^6.0.17"
+    "postcss": "^6.0.21"
   }
 }
